@@ -48,6 +48,7 @@ createString = function(subactname){
     artstring = "Here's some fun crafts to try: "
     artstring += crafts();
   }
+  return artstring;
 }
 
 watercolor = function(){

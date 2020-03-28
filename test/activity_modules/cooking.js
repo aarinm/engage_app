@@ -2,7 +2,7 @@ exports.getCooking = function(subacts){
   var cookarray = [];
   var i = 0;
   while (i < subacts.Size){
-    var cookObj = subacts.ObjectAct(i);
+    var cookObj = subacts.ObjectAt(i);
     var cookActName = cookObj.StringOf("name");
     var cookString = createString(cookActName);
     artarray.push(artString);
@@ -44,6 +44,7 @@ createString = function(subactname){
     cookstring = "Dress up your veggies with these vegetarian dishes: ";
     cookstring += vegetarian();
   }
+  return cookstring;
 }
 
 baking = function(){
