@@ -65,11 +65,19 @@ grilling = function(){
 }
 
 cooking = function(){
-  
+  array = ['https://www.countryliving.com/food-drinks/g648/quick-easy-dinner-recipes/', 'https://www.foodnetwork.com/recipes/photos/50-quick-snack-recipes', 'https://www.jessicagavin.com/how-to/cooking-101/', 'https://www.bonappetit.com/gallery/cooking-at-home-coronavirus'];
+  const randomElement = array[Math.floor(Math.random() * array.length)];
+  return randomElement;  
 }
 
 meats = function(){
+  array = ['https://www.allrecipes.com/recipes/92/meat-and-poultry/', 'https://www.bonappetit.com/recipes/slideshow/quick-meat-recipes', 'https://www.delish.com/cooking/nutrition/g3209/healthy-high-protein/', 'https://www.foodnetwork.com/topics/meat'];
+  const randomElement = array[Math.floor(Math.random() * array.length)];
+  return randomElement; 
 }
 
-vegetarion = function(){
+vegetarian = function(){
+  array = ['https://www.allrecipes.com/recipes/87/everyday-cooking/vegetarian/', 'https://www.cookinglight.com/food/vegetarian/simple-vegetarian-recipes', 'https://www.bonappetit.com/recipes/vegetarian/slideshow/easy-vegetarian-dinner-recipes', 'https://tasty.co/topic/best-vegetarian'];
+  const randomElement = array[Math.floor(Math.random() * array.length)];
+  return randomElement; 
 }
