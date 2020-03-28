@@ -6,7 +6,7 @@ const authToken = process.env.TWILIO_ACCOUNT_SID;
 const accountSid = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
-var response = require('./workout.js');
+var msg = require('./scheduler.js')
 
 
 const app = express();
@@ -21,42 +21,35 @@ app.post('/sms', (req, res) => {
     var activities = obj.Activity;
 
     if (activities["Exercise"] != null) {
-        var exercises = response.getExercise(activities["Exercise"]);
-        for (index = 0; index < exercises.length; index++) {
-            var schedule = require('node-schedule');
-            var start_time = (activities["Exercises"][index].start_time).split(':');
-            var end_time = activities["Exercises"][index].end_time;
-            var date = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate(), start_time[0], start_time[1], 0);
-            schedule.scheduleJob(date, function(){
-                client.messages
-                    .create({
-                    body: exercises[index],
-                    from: '+1243',
-                    to: '2132132' // Need to obtain caller's phone number                    
-                    })
-                .then(message => console.log(message.sid));
-            });
-        }
+        var exercise = require('./activity_modules/exercise.js');
+        var exercises = exercise.getExercise(activities["Exercise"]);
+        msg.sendMessage(exercises, req.body, "Exercise" );
     }
 
-   if (req.body.Body.includes("exercise")) {
-     var1 = ('Here is a workout you might like: ');
-     var2 = response.getExercise();
-     var1 = var1.concat(var2);
-     twiml.message(var1);
-   } else if (req.body.Body.includes('music')) {
-       var1 = ('Here is a song you might like: ');
-       var2 = response.getMusic();
-       var1 = var1.concat(var2);
-       twiml.message(var1);
-   } else {
-    twiml.message(
-        'No Body param match, Twilio sends this in the request to your server.'
-      );
-   }
+    if (activities["Art"] != null) {
+        var art = require('./activity_modules/art.js');
+        var arts = art.getArt(activities["Art"]);
+        msg.sendMessage(arts, req.body, "Art");
+    }
 
-    res.writeHead(200, {'Content-Type': 'text/xml'});
-    res.end(twiml.toString());
+    if (activities["Cooking"] != null) {
+        var cooking = require('./activity_modules/cooking.js');
+        var cookings = cooking.getCooking(activities["Cooking"]);
+        msg.sendMessage(cookings, req.body, "Cooking");
+    }
+
+    if (activities["Language"] != null) {
+        var language = require('./activity_modules/language.js');
+        var languages = language.getLanguage(activities["Language"]);
+        msg.sendMessage(languages, req.body, "Language");
+    }
+
+    if (activities["Music"] != null) {
+        var music = require('./activity_modules/music.js');
+        var musics = music.getMusic(activities["Music"]);
+        msg.sendMessage(musics, req.body, "Music");
+    }
+  
 })
 
 http.createServer(app).listen(3000,() => {
