@@ -1,4 +1,4 @@
-exports.getMusic = function(subacts){
+exports.getArt = function(subacts){
   var artarray = [];
   var i = 0;
   while (i < subacts.Size){

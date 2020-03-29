@@ -7,7 +7,7 @@ exports.getExercise = function(array) {
             messages.push(res);
         }
         
-        if (item.name == "calisthenics") {
+        if (item.name == "Calisthenics") {
             var link = calisthenics();
             var res = "Here is a calisthenics workout for you try: ".concat(link);
             messages.push(res);
