@@ -8,7 +8,7 @@ exports.sendMessage = function(messages, obj, activity){
             client.messages
                 .create({
                 body: exercises[index],
-                from: '+1243',
+                from: '+12547813211',
                 to: obj["Phone_number"] // Need to obtain caller's phone number                    
                 })
             .then(message => console.log(message.sid));
