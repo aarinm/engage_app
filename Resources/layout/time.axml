@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#1D252D"
+	android:minWidth="25px"
+	android:minHeight="25px">
+	<TextView
+		android:text="What Time?"
+		android:textSize="30sp"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom"
+		android:layout_gravity="center_horizontal"
+		android:textColor="#FFFFFF"
+		android:id="@+id/whatexe"
+		android:backgroundTint="#ff000000"
+		android:layout_marginBottom="20dp"
+		android:layout_marginTop="20dp" 
+	/>
+
+
+	<!--yoga”, “calisthenics”, “cardio”, “circuits”, “losing weight”, “gaining muscle>!-->
+	<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="horizontal"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="#1D252D"
+	android:minWidth="25px"
+	android:minHeight="25px">
+	<Button
+		android:id="@+id/eighta"
+		android:layout_width="110dp"
+		android:layout_height="70dp"
+		android:text="8:00 AM"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#D174FB"
+		android:layout_gravity="center_horizontal"
+		android:layout_margin="10dp" />
+	<Button
+		android:layout_width="110dp"
+		android:layout_height="70dp"
+		android:text="9:00 am"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#E9CCF6"
+		android:id="@+id/ninea"
+		android:layout_margin="10dp"
+		android:layout_gravity="center_horizontal" />
+		<Button
+		android:id="@+id/tena"
+		android:layout_width="110dp"
+		android:layout_height="70dp"
+		android:text="10:00 am"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#D174FB"
+		android:layout_gravity="center_horizontal"
+		android:layout_margin="10dp" />
+	
+		</LinearLayout>
+	<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="horizontal"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="#1D252D"
+	android:minWidth="25px"
+	android:minHeight="25px">
+		<Button
+		android:id="@+id/elea"
+		android:layout_width="110dp"
+		android:layout_height="70dp"
+		android:text="11:00 am"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#D174FB"
+		android:layout_gravity="center_horizontal"
+		android:layout_margin="10dp" />
+	<Button
+		android:layout_width="110dp"
+		android:layout_height="70dp"
+		android:text="12:00 pm"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#E9CCF6"
+		android:id="@+id/twel"
+		android:layout_margin="10dp"
+		android:layout_gravity="center_horizontal" />
+		<Button
+		android:id="@+id/one"
+		android:layout_width="110dp"
+		android:layout_height="70dp"
+		android:text="1:00 pm"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#D174FB"
+		android:layout_gravity="center_horizontal"
+		android:layout_margin="10dp" />
+		</LinearLayout>
+	
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#1D252D"
+		android:minWidth="25px"
+		android:minHeight="25px">
+		<Button
+		android:id="@+id/two"
+		android:layout_width="110dp"
+		android:layout_height="70dp"
+		android:text="2:00 pm"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#D174FB"
+		android:layout_gravity="center_horizontal"
+		android:layout_margin="10dp" />
+	<Button
+		android:layout_width="110dp"
+		android:layout_height="70dp"
+		android:text="3:00 pm"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#E9CCF6"
+		android:id="@+id/three"
+		android:layout_margin="10dp"
+		android:layout_gravity="center_horizontal" />
+		<Button
+		android:id="@+id/four"
+		android:layout_width="110dp"
+		android:layout_height="70dp"
+		android:text="4:00 PM"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#D174FB"
+		android:layout_gravity="center_horizontal"
+		android:layout_margin="10dp" />
+	</LinearLayout>
+	<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="horizontal"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="#1D252D"
+	android:minWidth="25px"
+	android:minHeight="25px">
+	<Button
+		android:id="@+id/five"
+		android:layout_width="110dp"
+		android:layout_height="70dp"
+		android:text="5:00 pm"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#D174FB"
+		android:layout_gravity="center_horizontal"
+		android:layout_margin="10dp" />
+	<Button
+		android:layout_width="110dp"
+		android:layout_height="70dp"
+		android:text="6:00 pm"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#E9CCF6"
+		android:id="@+id/six"
+		android:layout_margin="10dp"
+		android:layout_gravity="center_horizontal" />
+		<Button
+		android:id="@+id/seve"
+		android:layout_width="110dp"
+		android:layout_height="70dp"
+		android:text="7:00 pm"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#D174FB"
+		android:layout_gravity="center_horizontal"
+		android:layout_margin="10dp" />
+		</LinearLayout>
+	<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="horizontal"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="#1D252D"
+	android:minWidth="25px"
+	android:minHeight="25px">
+	<Button
+		android:id="@+id/eightp"
+		android:layout_width="110dp"
+		android:layout_height="70dp"
+		android:text="8:00 pm"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#D174FB"
+		android:layout_gravity="center_horizontal"
+		android:layout_margin="10dp" />
+	<Button
+		android:layout_width="110dp"
+		android:layout_height="70dp"
+		android:text="9:00 pm"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#E9CCF6"
+		android:id="@+id/ninep"
+		android:layout_margin="10dp"
+		android:layout_gravity="center_horizontal" />
+		<Button
+		android:id="@+id/tenp"
+		android:layout_width="110dp"
+		android:layout_height="70dp"
+		android:text="10:00 pm"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#D174FB"
+		android:layout_gravity="center_horizontal"
+		android:layout_margin="10dp" />
+		</LinearLayout>
+</LinearLayout>

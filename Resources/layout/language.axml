@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#1D252D"
+	android:minWidth="25px"
+	android:minHeight="25px">
+	<TextView
+		android:text="What Language?"
+		android:textSize="30sp"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom"
+		android:layout_gravity="center_horizontal"
+		android:textColor="#FFFFFF"
+		android:id="@+id/whatexe"
+		android:backgroundTint="#ff000000"
+		android:layout_marginBottom="20dp"
+		android:layout_marginTop="20dp" 
+	/>
+
+
+	
+	
+	<Button
+		android:id="@+id/english"
+		android:layout_width="fill_parent"
+		android:layout_height="60dp"
+		android:text="english"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#EE1234"
+		android:layout_gravity="center_horizontal"
+		android:layout_margin="10dp" />
+	<Button
+		android:layout_width="fill_parent"
+		android:layout_height="60dp"
+		android:text="spanish"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#F2B51D"
+		android:id="@+id/spanish"
+		android:layout_margin="10dp"
+		android:layout_gravity="center_horizontal" />
+	
+	
+		<Button
+		android:layout_width="fill_parent"
+		android:layout_height="60dp"
+		android:padding="10dp"
+		android:text="french"
+		android:textSize="20dp"
+		android:gravity="bottom"
+		android:background="#EEE128"
+		android:id="@+id/french" 
+		android:layout_margin="10dp"
+		android:layout_gravity="center_horizontal"
+		/>
+		
+	
+
+		<Button
+			android:layout_width="fill_parent"
+		android:layout_height="60dp"
+			android:text="chinese"
+			android:textSize="20dp"
+			android:padding="10dp"
+			android:gravity="bottom"
+			android:background="#92F21D"
+			android:id="@+id/chinese"
+			android:layout_margin="10dp"
+			android:layout_gravity="center_horizontal"
+	/>
+	<Button
+			android:layout_width="fill_parent"
+		android:layout_height="60dp"
+			android:padding="10dp"
+			android:text="Italian"
+			android:textSize="20dp"
+			android:gravity="bottom"
+			android:layout_margin="10dp"
+			android:background="#1D90F2"
+			android:layout_gravity="center_horizontal"
+			android:id="@+id/italian" />
+</LinearLayout>

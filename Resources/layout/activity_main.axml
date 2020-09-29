@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#1D252D"
+	android:minWidth="25px"
+	android:minHeight="25px">
+	<TextView
+		android:text="Welcome!"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/welcome" 
+		android:textSize= "25sp"
+		android:textColor="#FFFFFF"
+		android:layout_marginTop="10dp"
+	/>
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="50dp">
+		<TextView
+		android:text="Enter Phone Number:"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/welcome" 
+		android:textSize= "15sp"
+		android:textColor="#FFFFFF"
+	/>
+	<EditText
+		android:textColor="#FFFFFF"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/editText"
+		android:imeOptions="actionGo"
+		android:inputType="text"		
+		/>
+	</LinearLayout>
+	<Button
+		android:id="@+id/confirm"
+		android:layout_width="60dp"
+		android:layout_height="30dp"
+		android:text="confirm"
+		android:textSize="13dp"
+		android:gravity="center"
+		android:background="#FFFFFF"
+		android:layout_gravity="right"
+		android:layout_margin="6dp" />
+	
+	<TextView
+		android:text="Choose an Activity"
+		android:textSize="30sp"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom"
+		android:layout_gravity="center_horizontal"
+		android:textColor="#FFFFFF"
+		android:id="@+id/choose" />
+
+
+
+	<Button
+		android:id="@+id/button"
+		android:layout_width="fill_parent"
+		android:layout_height="60dp"
+		android:text="Exercise"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#EE1345"
+		android:layout_gravity="center_horizontal"
+		android:layout_margin="10dp" />
+	<Button
+		android:layout_width="fill_parent"
+		android:layout_height="60dp"
+		android:text="Art"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#F2B51D"
+		android:id="@+id/button1"
+		android:layout_margin="10dp"
+		android:layout_gravity="center_horizontal" />
+	<Button
+		android:layout_width="fill_parent"
+		android:layout_height="60dp"
+		android:padding="10dp"
+		android:text="Music"
+		android:textSize="20dp"
+		android:gravity="bottom"
+		android:background="#EEE128"
+		android:id="@+id/button2" 
+		android:layout_margin="10dp"
+		android:layout_gravity="center_horizontal"
+		/>
+	<Button
+		android:layout_width="fill_parent"
+		android:layout_height="60dp"
+		android:text="Cooking"
+		android:textSize="20dp"
+		android:padding="10dp"
+		android:gravity="bottom"
+		android:background="#92F21D"
+		android:id="@+id/button3" 
+		android:layout_margin="10dp"
+		android:layout_gravity="center_horizontal"
+	/>
+	<Button
+		android:layout_width="fill_parent"
+		android:layout_height="60dp"
+		android:padding="10dp"
+		android:text="Language"
+		android:textSize="20dp"
+		android:gravity="bottom"
+		android:layout_margin="10dp"
+		android:background="#1D90F2"
+		android:layout_gravity="center"
+		
+	android:id="@+id/button4" />
+</LinearLayout>
